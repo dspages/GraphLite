@@ -1,0 +1,409 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+ *= require_self
+ */
+ @import "./reset";
+ @import "./form_style_7";
+
+input[type="submit"]{
+   background: linear-gradient(to bottom right, #55FF55, #558855);
+   max-height: 30px;
+   font-family: "Bitter",serif;
+   margin-bottom: 2px;
+   appearance: none;
+   box-shadow: none;
+   border-radius: 0;
+ }
+
+ input[type="submit"]:hover{
+   background: linear-gradient(to bottom right, #33CC33, #336633);
+   cursor: pointer;
+ }
+
+ input[type="text"]{
+   margin-left: 4px;
+ }
+
+ button{
+    background: linear-gradient(to bottom right, #DDDDFF, #9999BB);
+    border-radius: 5px;
+    font-family: "Bitter",serif;
+    margin-bottom: 2px;
+    appearance: none;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  button:hover{
+    background: linear-gradient(to bottom right, #BBBBDD, #777799);
+  }
+
+  h2{
+    font-size: 24;
+    font-style: bold;
+  }
+
+  html {
+    height: 100%;
+    font-size: 125%;
+  }
+
+  body{
+    display: flex;
+    align-items: space-between;
+    margin: 0;
+    background: linear-gradient(to bottom right, white, #CCCCCC);
+    min-height: 100%;
+  }
+
+ main{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 100vh;
+   margin: 0 auto;
+ }
+
+select {
+  border-radius:0px;
+  padding:1px;
+  margin-bottom: 1px;
+  margin-left: 4px;
+  color:#555555;
+  appearance:none;
+  cursor:pointer;
+  height: 22px;
+ }
+
+
+
+ .dropzone{
+   border: 1px dashed darkgrey;
+   height: 80px;
+   width: 220px;
+ }
+
+ /* unvisited link */
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: #055505;
+}
+
+/* selected link */
+a:active {
+    color: black;
+    text-decoration: none;
+}
+
+.even-li{
+  background-color: rgba(100,100,200,.95);
+}
+
+ .odd-li{
+   background-color: rgba(150,150,250,.95);
+ }
+
+ .even-li,.odd-li{
+   padding: 3px;
+   transition: color 0.9s ease, padding 0.4s ease, font-size 0.4s ease;
+   list-style: none;
+   width: 96%;
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
+ }
+
+.even-li:hover,.odd-li:hover {
+  background-color: rgba(200,200,255,1);
+}
+
+.logo:hover{
+  cursor: pointer;
+}
+
+.logo{
+  padding-top: 20px;
+  padding-left: 25px;
+  padding-bottom: 20px;
+}
+
+.browser-compat{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100px;
+}
+
+.click-invitation{
+  padding: 10px;
+  font-size: 24px;
+}
+
+.sorting{
+  display: flex;
+  flex-direction: column;
+}
+
+ .parent{
+   width: 100%;
+   height: 100%;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+ }
+
+ .main{
+   background: linear-gradient(to bottom, rgba(255,255,255,0.5), rgba(150,220,200,0.0));
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 100%;
+   margin: 0 auto;
+ }
+
+ .data-show{
+   display: flex;
+   align-items: stretch;
+   justify-content: space-between;
+   flex-direction: column;
+   width: 100%;
+   height: 100%;
+   margin: 0 auto;
+ }
+
+ .splash-page{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+ }
+
+.intro-box{
+  background: linear-gradient(to top right, #EEEEFF, #AAAAFF);
+  opacity: 0.8;
+  border: 2px solid lightgrey;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  padding: 10px;
+  margin: 10px;
+  width: 300px;
+}
+
+.header-button-box{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding-top: 7px;
+  padding-right: 7px;
+  padding-bottom: 10px;
+}
+
+.recharts-tooltip-wrapper{
+
+}
+
+svg{
+  overflow: visible;
+}
+
+.recharts-surface{
+  z-index: 1;
+  background: white;
+  border: 2px solid lightgrey;
+  overflow: visible;
+}
+
+.greeting-box{
+  background: rgba(150,150,255,.95);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  width: 100%;
+}
+
+.data-index-page{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.form-container{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.new-form{
+  background: linear-gradient(to top right, #EEEEFF, #AAAAFF);
+  border: 2px solid lightgrey;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  opacity: .90;
+}
+
+.background-image{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  max-height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+.drop-down-group{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-left: 5px
+}
+
+.data-render{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 15px;
+  padding-left: 25px;
+  padding-bottom: 15px;
+  border-radius: 5px;
+  width: 77%;
+}
+
+.show-content{
+  height: 85%;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+}
+
+.data-index-item{
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+  background: linear-gradient(to top right, rgba(100,100,250,1), rgba(150,150,255,1));
+}
+
+.graph-index{
+  background: rgba(150,150,255,.95);
+  margin-right: 10px;
+  width: 16.5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-item{
+  padding: 5px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bottom-bar{
+  background: rgba(150,150,255,1);
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  height: 15%;
+}
+
+.graph-form{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: row;
+  border-radius: 5px;
+  padding-left: 5px;
+  height: 70px;
+  width: 100%;
+}
+
+.data-box{
+  border-radius: 5px;
+  width: 100%;
+  min-height: 200px;
+  max-height: 800px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.tooltip-wrapper {
+  position: relative;
+  width: 0;
+  height: 0
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    width: 120px;
+    bottom: 25px;
+    left: 50%;
+    margin-right: 60px;
+    z-index: 2;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
